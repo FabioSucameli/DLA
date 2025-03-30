@@ -289,7 +289,7 @@ def main():
     # Variabili
     seed = 1023
     depths = [10,20,30]  # Profondità da testare
-    batch_size, epochs, learning_rate = 256, 1, 0.0001
+    batch_size, epochs, learning_rate = 256, 50, 0.0001
     hidden_size=32
     layers_per_block=1
     
