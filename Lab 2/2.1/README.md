@@ -1,4 +1,4 @@
-# CartPole-v1: REINFORCE Algorithm with PyTorch
+# CartPole: REINFORCE Algorithm
 
 This project implements a reinforcement learning agent using the **REINFORCE** policy gradient algorithm in the `CartPole-v1` environment from OpenAI Gymnasium. The codebase is fully modular and tracks training metrics via [Weights & Biases (wandb)](https://wandb.ai).
 
