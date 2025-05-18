@@ -148,7 +148,7 @@ class Trainer:
         wandb.log({'train/loss': epoch_loss, 'train/accuracy': epoch_acc, 'epoch': epoch})
         return epoch_loss, epoch_acc
 
-    def evaluate(self, loader, epoch):
+    def evaluate(self, loader, epoch, split='val'):
         self.model.eval()
         total, correct, running_loss = 0, 0, 0.0
         with torch.no_grad():
@@ -160,15 +160,23 @@ class Trainer:
                 preds = output.argmax(dim=1)
                 correct += preds.eq(target).sum().item()
                 total += data.size(0)
+
         epoch_loss = running_loss / total
         epoch_acc = correct / total
-        wandb.log({'val/loss': epoch_loss, 'val/accuracy': epoch_acc, 'epoch': epoch})
+
+       
+        log_dict = {
+            f'{split}/loss': epoch_loss,
+            f'{split}/accuracy': epoch_acc
+        }
+        if epoch >= 0:
+            log_dict['epoch'] = epoch
+
+        wandb.log(log_dict)
         return epoch_loss, epoch_acc
 
     def test(self, loader):
-        loss, acc = self.evaluate(loader, -1)
-        wandb.log({'test/loss': loss, 'test/accuracy': acc})
-        return loss, acc
+        return self.evaluate(loader, epoch=-1, split='test')
 
 # Funzione principale
 def main():
