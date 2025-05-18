@@ -19,14 +19,14 @@ Two types of models were implemented:
 
 ## Results Summary
 
-| Model             | Depth | Val Accuracy | Test Accuracy | Test Loss |
-|------------------|-------|--------------|----------------|-----------|
-| Standard CNN     | 10    | 0.8846       | 0.8846         | 0.4676    |
-| Residual CNN     | 10    | 0.8772       | 0.8772         | 0.4334    |
-| Standard CNN     | 20    | 0.8443       | 0.8443         | 0.4991    |
-| Residual CNN     | 20    | 0.8981       | 0.8981         | 0.4136    |
-| Residual CNN     | 30    | **0.9042**   | **0.9042**     | **0.4052** |
-| Standard CNN     | 30    | ❌ Not trained | ❌ Not trained | ❌ OOM Error |
+| Model             | Depth | Test Accuracy | Test Loss |
+|------------------|-------|----------------|-----------|
+| Standard CNN     | 10    |  0.8846         | 0.4676    |
+| Residual CNN     | 10    |  0.8772         | 0.4334    |
+| Standard CNN     | 20    | 0.8443         | 0.4991    |
+| Residual CNN     | 20    |  0.8981         | 0.4136    |
+| Residual CNN     | 30    |  **0.9042**     | **0.4052** |
+| Standard CNN     | 30    | ❌ Not trained | ❌ OOM Error |
 
 
 As **predicted by the theoretical claim**, deeper standard CNNs **not only struggle to generalize**, but they can **fail entirely due to optimization and memory issues**.
