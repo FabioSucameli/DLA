@@ -58,7 +58,7 @@ Using `Trainer`, we fine-tuned the model with linear learning rate decay over 4 
 
 Visualizations tracked using Weights & Biases include:
 
-1. **Training Loss**: Starts around 0.69 and steadily decreases to ~0.17, with no anomalies or spikes. This confirms effective and stable learning.
+1. **Training Loss**: Shows a consistent downward trend from ~0.69 to ~0.17, indicating the model is effectively minimizing error.
 2. **Eval Accuracy**: Increases from ~84.8% to ~85.6%, showing consistent improvement and validating the effectiveness of fine-tuning.
 3. **Learning Rate**: Linearly decays from 1e-5 down to ~4.4e-6, confirming that the scheduler operates as expected.
 4. **Eval F1**: Closely mirrors accuracy, reaching a balanced and strong final value of ~0.856.
