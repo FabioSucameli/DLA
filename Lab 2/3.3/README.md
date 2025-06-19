@@ -77,7 +77,9 @@ The training shows:
 - Convergence to ~800-900 reward range indicating successful track completion
 
 ### Evaluation 
-**Visualization of driving performance: ** [Agent eval](./eval.gif) 
+**Visualization of driving performance:** 
+
+![Agent eval](./eval.gif) 
 
 
 The agent follows the racing line, corrects steering smoothly, and accelerates on straights.
