@@ -96,7 +96,7 @@ This confirms that CLIP already performs extremely well on ImageNet-like data.
 
 The training metrics were logged to Weights & Biases (wandb):
 
-![Training Metrics](./images/train_metrics.png)
+![Training Metrics](./train_metrics.png)
 
 - `train_loss` showed rapid convergence.
 - `val_accuracy` slightly increased then plateaued.
