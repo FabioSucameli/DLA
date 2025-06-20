@@ -9,7 +9,7 @@ Each lab is structured in subfolders with self-contained exercises, `README.md` 
 
 ##  Labs Overview
 
-###  [`Lab1/`](./Lab1) — Deep Learning Foundations
+###  [`Lab 1/`](./Lab%201) — Deep Learning Foundations
 Build core intuition for deep architectures by training and comparing classic MLPs, CNNs, and residual models.
 
 **Highlights**:
@@ -22,7 +22,7 @@ Build core intuition for deep architectures by training and comparing classic ML
 
 ---
 
-###  [`Lab2/`](./Lab2) — Deep Reinforcement Learning
+###  [`Lab 2/`](./Lab%202) — Deep Reinforcement Learning
 Apply and improve REINFORCE on CartPole and train agents on CarRacing using DQN or PPO.
 
 **Highlights**:
@@ -34,7 +34,7 @@ Apply and improve REINFORCE on CartPole and train agents on CarRacing using DQN 
 
 ---
 
-###  [`Lab3/`](./Lab3) — Transformers
+###  [`Lab 3/`](././Lab%203) — Transformers
 Work with HuggingFace’s ecosystem to adapt transformer models for NLP and vision tasks.
 
 **Highlights**:
