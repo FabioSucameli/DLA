@@ -114,3 +114,26 @@ This experiment demonstrates that:
 
 
 ---
+
+## Dependencies
+
+To run this project, make sure to install the following Python packages:
+
+```bash
+pip install torch torchvision
+pip install transformers
+pip install peft
+pip install wandb
+pip install scikit-learn
+pip install pillow
+pip install tqdm
+```
+---
+
+### Run
+
+After installing the dependencies, you can launch the Fine-Tuning CLIP on ImageNette with:
+
+```bash
+python main.py
+```
